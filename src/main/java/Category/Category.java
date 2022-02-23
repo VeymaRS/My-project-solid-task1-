@@ -1,0 +1,6 @@
+package Category;
+
+public enum Category {
+    SMARTPHONES, LAPTOPS, TELEVISIONS, LARGE_HOME_APPLIANCES, SMALL_KITCHEN
+
+}
