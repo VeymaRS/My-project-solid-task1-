@@ -21,6 +21,6 @@
 [`DeliveryCourierOnTheEcoTransport`](https://github.com/VeymaRS/My-project-solid-task1-/blob/65d44fb5a9690e2468752dd50b454b7adb9488bb/src/main/java/Delivery/DeliveryCourierOnTheEcoTransport.java#L7)
 
 #### Open-closed princip. Возможно легко добавить новые способы доставки благодаря наследованию интерфейса Delivery и перегрузке его метода с учетом новых потребностей. Сам Delivery при этом не меняется.
-[`Delivery`] (https://github.com/VeymaRS/My-project-solid-task1-/blob/fa2516e0c8fe590679f687ed95cc472503f8ff90/src/main/java/Delivery/Delivery.java#L6)
+[`Delivery`] (https://github.com/VeymaRS/My-project-solid-task1-/blob/0de19a313db12c4c5fbed490ace9ec89651f2420/src/main/java/Delivery/Delivery.java#L6-L8)
 [`DeliveryByDrone`] (https://github.com/VeymaRS/My-project-solid-task1-/blob/fa2516e0c8fe590679f687ed95cc472503f8ff90/src/main/java/Delivery/DeliveryByDrone.java#L23-L26)
 [`DeliveryByCar`] (https://github.com/VeymaRS/My-project-solid-task1-/blob/fa2516e0c8fe590679f687ed95cc472503f8ff90/src/main/java/Delivery/DeliveryByCar.java#L23-L26)
