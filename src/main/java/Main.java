@@ -54,7 +54,7 @@ public class Main {
 
         deliveries.add(new DeliveryByDrone("Phantom", 30));
         deliveries.add(new DeliveryCourier("Maxim", 5));
-        deliveries.add(new DeliveryCourierOnTheEcoTransport("Denis", 20, "ElectroScooter"));
+        deliveries.add(new DeliveryCourierOnTheEcoTransport("Denis", 20, "ElectroScooter", 20));
         deliveries.add(new DeliveryByCar("Mercedes", 60));
 
         System.out.println("Hello, dear friend! We are pleased to introduce the following products:" + "\n");

@@ -26,8 +26,7 @@ public class DeliveryCourier implements Delivery {
 
     @Override
     public String delivery() {
-        String humanSay = "Hi! I like to walk, so it will take a little longer to deliver your order. Thanks for understanding.";
-        return humanSay;
+        return "Hi! I like to walk, so it will take a little longer to deliver your order. Thanks for understanding.";
     }
 
     @Override

@@ -4,7 +4,7 @@ import Category.Category;
 
 //Single-responsibility principle
 //Open-Close principle
-public class DeliveryByDrone implements Delivery {
+public class DeliveryByDrone implements Delivery, Maintenance {
 
     private String nameDelivery = "Delivery by drone";
     protected String modelName;
@@ -22,19 +22,23 @@ public class DeliveryByDrone implements Delivery {
 
     @Override
     public String delivery() {
-        String droneSay = "Hello, human! Your order will be delivered by a smart robot.";
-        return droneSay;
+        return  "Hello, human! Your order will be delivered by a smart robot.";
     }
 
     @Override
     public boolean getDeliveryPossibility(int roadDistance, int waitingTime, Category category) {
         boolean possibility = false;
-        if (!category.equals(Category.LARGE_HOME_APPLIANCES) && !category.equals(Category.TELEVISIONS)) {
+        if (!category.equals(Category.LARGE_HOME_APPLIANCES) && !category.equals(Category.TELEVISIONS) && checkMaintanance()) {
             if (waitingTime >= roadDistance / speed) {
                 possibility = true;
             }
         }
         return possibility;
+    }
+
+    @Override
+    public boolean checkMaintanance() {
+        return false;
     }
 }
 
